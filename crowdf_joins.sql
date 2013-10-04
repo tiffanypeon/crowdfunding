@@ -31,7 +31,7 @@ WHERE projects.category = "music"
 ORDER BY pledges.pledge_amount DESC; 
 
 -- Total of each book charity 
-SELECT projects.name AS 'Project Name', SUM (pledge_amount),
+SELECT projects.name AS 'Project Name', SUM (pledge_amount)
 AS 'Amount Pledged' 
 FROM pledges JOIN projects ON 
 pledges.project_id = projects.id
